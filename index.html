@@ -1,40 +1,826 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>DIAPO</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/blood.css" id="theme" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif !important;
+      }
 
-		<title>reveal.js</title>
+      section {
+        padding: 0 !important;
+      }
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+      .intro-text {
+        font-size: 20px;
+        text-align: justify;
+      }
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+      .litle-text {
+        font-size: 25px;
+        text-align: justify;
+      }
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+      .center-text {
+        font-size: 15px;
+      }
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+      img {
+        width: 400px;
+      }
+
+      .wel-img {
+        height: 70px;
+        width: 200px;
+        margin: 10px !important;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .col {
+        flex: 0.5;
+      }
+
+      .title {
+        font-weight: bold !important;
+      }
+
+      h2 {
+        font-size: 50px !important;
+      }
+
+      h3 {
+        font-size: 30px !important;
+        margin-bottom: 0 !important;
+      }
+
+      ul {
+        padding: 20px 0;
+        text-align: justify !important;
+      }
+
+      .img-1 {
+        width: 350px;
+      }
+
+      .figure {
+        font-size: 15px;
+        font-style: italic;
+        margin: 0 !important;
+      }
+
+      .cel {
+        margin-top: 0 !important;
+      }
+
+      .img-sys {
+        width: 700px;
+        display: block;
+        margin: auto !important;
+        margin-bottom: 20px !important;
+      }
+
+      .sys {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .sys b {
+        margin: 10px 0;
+        font-size: 30px;
+        color: #90fd02;
+      }
+
+      .etape p {
+        font-size: 25px;
+      }
+
+      .api {
+        width: auto;
+      }
+
+      h1 {
+        color: #0571cf !important;
+      }
+
+      h2 {
+        color: #0571cf !important;
+      }
+
+      li b {
+        color: #90fd02;
+      }
+
+      h3 {
+        color: #62b2f8 !important;
+      }
+
+      .chap-title {
+        text-transform: uppercase !important;
+      }
+
+      .chap-title span {
+        color: #90fd02;
+        font-size: 40px;
+      }
+
+      .etape b {
+        color: #90fd02;
+      }
+
+      .meth {
+        font-size: 30px;
+      }
+
+      .active b {
+        color: #62b2f8 !important;
+        font-size: 40px;
+      }
+
+      .heading {
+        color: #90fd02;
+      }
+
+      .controls-arrow {
+        color: #90fd02 !important;
+      }
+
+      .progress span {
+        color: #90fd02 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section><h1>BIENVENUE</h1></section>
+          <section>
+            <div>
+              <p class="center-text">
+                République Algérienne Démocratique et Populaire <br />
+                Ministère de l’Enseignement Supérieur et de la Recherche
+                Scientifique <br />
+                Université A.MIRA-BEJAIA
+              </p>
+              <img class="wel-img" src="img/logo.jpg" alt="" />
+              <p class="center-text">
+                Faculté de Technologie <br />
+                Département d’Electrotechnique
+              </p>
+              <p class="center-text">
+                Projet de Fin d’Etude <br />
+                Pour l’obtention du diplôme de Master en Electromécanique
+                <br />
+                Thème
+              </p>
+              <p class="title">
+                Réalisation d’une interface web pour le dimensionnement des
+                installations photovoltaïques autonomes
+              </p>
+              <div class="row center-text">
+                <div class="col">
+                  <p>
+                    Préparé par : <br />
+                    BENMEZIANE Yanis <br />
+                    BOURENANE Zakaria
+                  </p>
+                </div>
+                <div class="col">
+                  <p>
+                    Dirigé par : <br />
+                    Mr R.BABOURI
+                  </p>
+                </div>
+              </div>
+              <p class="center-text">Année Universitaire : 2019/2020</p>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section
+            class="heading"
+            data-transition="zoom-out"
+            style="font-size: 90px; font-weight: bolder"
+          >
+            INTRODUCTION GENERALE
+          </section>
+          <section>
+            <p class="litle-text">
+              De nos jours les gens de plus en plus veulent convertir leur
+              source d’alimentation électrique vers le photovoltaïque pour de
+              différentes raisons (économique, indépendance énergétique, lieu
+              isolé…etc.) mais plusieurs obstacles techniques les empêchent
+              parmi eux le dimensionnement vu sa complexité et son cout élevé.
+              Pour résoudre ce problème nous avons réuni nos connaissances
+              acquises dans le domaine du photovoltaïque ainsi que nos
+              compétences en informatique et nous avons réussi à créer une
+              interface web qui permet d’effectuer le processus du
+              dimensionnement d’une manière simple et économique.
+            </p>
+          </section>
+        </section>
+        <section data-transition="slide">
+          <section
+            data-transition="zoom-out"
+            style="font-size: 90px; font-weight: bolder"
+          >
+            <div class="chap-title">
+              <span>CHAPITRE I</span><br />
+              GENERALITES SUR LE PHOTOVOLTAIQUE
+            </div>
+          </section>
+          <section>
+            <h2>L’énergie solaire</h2>
+            <div class="intro-text">
+              Le soleil est une source quasiment inépuisable d’énergie qui
+              envoie à la surface de la terre un rayonnement qui représente
+              chaque année environ 8400 fois la consommation énergétique. Cela
+              correspond à une puissance instantanée reçue de 1 kilowatt crête
+              par mètre carré (KWc/m2) répartie sur tout le spectre, de
+              l’ultraviolet à l’infrarouge. Les déserts de notre planète
+              reçoivent en 6 heures plus d’énergie du soleil que n’en consomme
+              l’humanité en une année. L'énergie solaire est produite et
+              utilisée selon plusieurs procédés :
+              <ul>
+                <li>
+                  <b>L'énergie solaire thermique :</b> qui consiste tout
+                  simplement à produire de la chaleur grâce à des panneaux
+                  sombres. On peut aussi produire avec de la vapeur à partir de
+                  la chaleur du soleil puis convertir la vapeur en électricité.
+                </li>
+                <li>
+                  <b>L'énergie solaire photovoltaïque :</b> qui consiste à
+                  produire directement de l'électricité à partir de la lumière à
+                  l’aide de panneaux solaires. Cette forme d’énergie est déjà
+                  exploitée dans de nombreux pays, surtout dans les pays ou les
+                  régions ne disposant pas de ressources énergétiques
+                  conventionnelles tels que les hydrocarbures ou le charbon.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2>Type de rayonnement solaire</h2>
+            <ul class="intro-text">
+              <li>
+                <b>Rayonnement direct :</b> Flux solaire sous forme de rayons
+                parallèles provenant de disque soleil sans avoir été dispersé
+                par l’atmosphère.
+              </li>
+              <li>
+                <b>Rayonnement diffus :</b> C’est la partie du rayonnement
+                provenant du soleil, ayant subi multiples réflexions
+                (dispersions), dans l’atmosphère.
+              </li>
+              <li>
+                <b>Rayonnement réfléchi :</b> C’est la partie de l’éclairement
+                solaire réfléchi par le sol, ce rayonnement dépend directement
+                de la nature du sol (nuage, sable...). Il se caractérise par un
+                coefficient propre de la nature de lien appelé Albédo (s) 0 ≤ s
+                ≤ 1.
+              </li>
+              <li>
+                <b>Rayonnement global :</b> Un plan reçoit de la part du sol un
+                rayonnement global qui est le résultat de la superposition des
+                trois compositions direct, diffus et réfléchi.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>L’effet photovoltaïque</h2>
+            <div class="intro-text">
+              <ul>
+                <li>« Phots », qui signifient lumière.</li>
+                <li>
+                  « Volta », du nom du physicien Alessandro Volta (1745-1827,
+                  inventeur de la pile électrique).
+                </li>
+              </ul>
+              <br />
+              Appelé « module photovoltaïque » ou PV, c’est un panneau solaire
+              qui est destiné à récupérer les rayonnements du soleil pour les
+              transformer en électricité (Courant continu DC). L’effet
+              photovoltaïque constitue la conversion directe de l'énergie du
+              rayonnement solaire en énergie électrique au moyen de cellules
+              généralement à base de silicium. Pour obtenir une puissance
+              suffisante, les cellules sont reliées entre elles et constituent
+              le module photovoltaïque. <br />
+              L’ensemble de panneaux photovoltaïques interconnectés forme le
+              générateur. Celui-ci est caractérisé pricipalement par sa
+              puissance crête exprimée en kilowatt crête (kWc).
+            </div>
+          </section>
+          <section>
+            <h2>Cellule photovoltaïque</h2>
+            <div class="intro-text">
+              La cellule PV ou encore photopile est le plus petit élément d’une
+              installation photovoltaïque. Elle est composée de matériaux
+              semi-conducteurs et transforme directement l’énergie lumineuse en
+              énergie électrique. Les cellules photovoltaïques sont constituées
+              :
+              <ul>
+                <li>
+                  D’une fine couche semi-conductrice (matériau possédant une
+                  bande interdite, qui joue le rôle de barrière d’énergie que
+                  les électrons ne peuvent franchir sans une excitation
+                  extérieure, et dont il est possible de faire varier les
+                  propriétés électroniques) tel que le silicium, qui est un
+                  matériau présentant une conductivité électrique relativement
+                  bonne.
+                </li>
+                <li>
+                  D’une couche anti-reflet permettant une pénétration maximale
+                  des rayons solaires.
+                </li>
+                <li>
+                  D’une grille conductrice sur le dessus ou cathode et d’un
+                  métal conducteur sur le dessous ou anode.
+                </li>
+                <li>
+                  Les plus récentes possèdent même une nouvelle combinaison de
+                  multicouches réfléchissants justes en dessous du
+                  semi-conducteur, permettant à la lumière de rebondir plus
+                  longtemps dans celui-ci pour améliorer le rendement.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2>Principe de fonctionnement</h2>
+            <p class="intro-text">
+              Lorsque la cellule est exposée au rayonnement solaire, les photons
+              d'énergie (Eph = h.v) pénétrant dans la cellule solaire
+              transmettent leur énergie aux atomes de la jonction. Si cette
+              énergie est suffisamment élevée, elle peut faire passer les
+              électrons de la bande de valence à la bande de conduction du
+              matériau semi-conducteur et créer ainsi des paires « électron-
+              trou ». Les électrons (charges N) et les trous (charges P), sont
+              alors maintenus séparés par un champ électrique qui constitue une
+              barrière de potentiel. Si une charge est placée aux bornes de la
+              cellule, les électrons de la zone N rejoignent les trous de la
+              zone P via la connexion extérieure, donnant naissance à une
+              différence de potentiel et un courant électrique circule.
+            </p>
+            <img class="img-1" src="img/img1.jpg" alt="" />
+            <p class="figure">
+              Le principe de fonctionnement d’une cellule solaire.
+            </p>
+          </section>
+          <section>
+            <h2>Les différents types de cellules photovoltaïques</h2>
+            <ul class="intro-text">
+              <li>
+                <b> Les cellules monocristallines :</b> Elles ont le meilleur
+                rendement (de 12 à 18% voir jusqu’24% en laboratoire) Cependant,
+                elles coûtent trop chers dues à leur fabrication complexe.
+              </li>
+              <li>
+                <b> Les cellules poly cristallines :</b> Leur conception est
+                plus facile et leur coût de fabrication est moins important.
+                Cependant leur rendement est plus faible (de 11% à 15% voir
+                jusqu’à19.8 en laboratoire).
+              </li>
+              <li>
+                <b> Les cellules amorphes (couche mince) :</b> Elles ont un
+                faible rendement (de 5% à 8% voir jusqu’13% en laboratoire) ,
+                mais ne nécessitent que de très faibles épaisseurs de silicium
+                et ont un coût peu élevé . Elles sont utilise couramment dans de
+                petits produits de consommation telle que des calculatrices
+                solaires ou encore des montres.<br />
+                L’avantage de ce dernier type est le fonctionnent avec un
+                éclairement faible (même par temps couvert ou à l’intérieur d’un
+                bâtiment).
+              </li>
+            </ul>
+            <img class="cel" src="img/img2.jpg" alt="" />
+            <p class="figure">
+              Le principe de fonctionnement d’une cellule solaire.
+            </p>
+          </section>
+          <section>
+            <h2>Parametres des panneaux photovoltaïques</h2>
+            <ul class="intro-text">
+              <li>
+                <b> Courant de court-circuit Icc :</b> C’est le courant pour
+                lequel la tension aux bornes de la cellule ou du générateur PV
+                est nul.
+              </li>
+              <li>
+                <b> Tension en circuit ouvert Vcc :</b> C’est la tension Vco
+                pour laquelle le courant débité par le générateur photovoltaïque
+                est nul. (C’est la tension maximale d’une photopile ou d’un
+                générateur photovoltaïque).
+              </li>
+              <li>
+                <b> Point de puissance maximale Pm :</b> L’utilisation optimale
+                d’une photopile consiste à faire fonctionner une charge sous la
+                tension maximale et à un courant maximal. En effet, suivant la
+                formule P=V.I, pour que P soit maximal : il faut être dans les
+                conditions ou le produit V.I est maximale, c’est le point de
+                charge idéal de la photopile, ou point de puissance maximale Pm.
+              </li>
+              <li>
+                <b> Facteur de forme FF :</b> Le facteur de forme représente
+                l’efficacité de la cellule, il peut nous renseigner sur le
+                vieillissement de la cellule. C’est le rapport entre la
+                puissance maximale que peut fournir une cellule et la puissance
+                qu’il est théoriquement possible d’obtenir (puissance optimale).
+              </li>
+              <li>
+                <b> Rendement énergétique &#951; :</b> Le rendement de
+                conversion d’énergie est le rapport de la puissance générée et
+                de la puissance du rayonnement solaire incident Pi. On appelle
+                rendement rapport de la puissance maximale fournie (Pmax) sur la
+                puissance du rayonnement solaire incident (Pi).
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Avantages et inconvenients</h2>
+            <h3>Avantages</h3>
+            <ul class="intro-text last-list">
+              <li>
+                D’abord une haute fiabilité. L’installation ne comporte pas de
+                pièces mobiles qui la rendent particulièrement appropriée aux
+                régions isolées. C’est la raison de son utilisation sur les
+                engins spatiaux.
+              </li>
+              <li>
+                Ensuite le caractère modulaire des panneaux photovoltaïques
+                permet un montage Simple et adaptable à des besoins énergétiques
+                divers. Les systèmes peuvent être dimensionnés pour des
+                applications de puissances allant du milliwatt au Méga Watt.
+              </li>
+              <li>
+                Le coût de fonctionnement est très faible vu les entretiens
+                réduits et il ne nécessite ni combustible, ni son transport, ni
+                personnel hautement spécialisé.
+              </li>
+            </ul>
+            <h3>inconvenients</h3>
+            <ul class="intro-text last-list">
+              <li>
+                La fabrication du module photovoltaïque relève de la haute
+                technologie et requiert des investissements d’un coût élevé.
+              </li>
+              <li>
+                Le rendement réel de conversion d’un module est faible, de
+                l’ordre de 10-15 % (soit entre10 et 15 MW/km² pour le BENELUX)
+                avec une limite théorique Pour une cellule de 28%. Les
+                générateurs photovoltaïques ne sont pas compétitifs par rapport
+                aux générateurs diesel que pour des faibles demandes d’énergie
+                en régions isolées.
+              </li>
+              <li>Tributaire des conditions météorologiques.</li>
+            </ul>
+          </section>
+        </section>
+        <section data-transition="slide">
+          <section
+            data-transition="zoom-out"
+            style="font-size: 70px; font-weight: bolder"
+          >
+            <div class="chap-title">
+              <span>CHAPITRE II</span><br />
+              Dimensionnement d’une installation photovoltaïque autonome
+            </div>
+          </section>
+          <section>
+            <h2>Critères de choix d’une installation solaire</h2>
+            <ul class="meth">
+              <li><b>Economique</b></li>
+              <li><b>Production d’énergie</b></li>
+              <li><b>Esthétique </b></li>
+              <li><b>Ecologique</b></li>
+              <li><b>Sécurisation</b></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Différentes installations de systèmes photovoltaïques</h2>
+            <section class="intro-text">
+              <div class="sys">
+                <b>Système autonome</b>
+                <img class="img-sys" src="img/img3.jpg" alt="" />
+              </div>
+            </section>
+          </section>
+          <section class="intro-text">
+            <div class="sys">
+              <b>Système raccordé au réseau</b>
+              <img class="img-sys" src="img/img4.jpg" alt="" />
+            </div>
+            <div class="sys">
+              <b>Système hybride</b>
+              <p>
+                Il s’agit de systèmes qui regroupent des sources d’énergie de
+                nature différentes telle une installation éolienne, un
+                générateur diesel ou une centrale de cogénération en plus du
+                générateur photovoltaïque. Ce type d’installation est utilisé
+                lorsque le générateur photovoltaïque seul ne couvre pas toute
+                l’énergie requise .
+              </p>
+            </div>
+          </section>
+          <section>
+            <h2>Composants d'un système photovoltaïque autonome</h2>
+            <ul class="meth">
+              <li><b>Modules photovoltaïques</b></li>
+              <li><b>Batteries</b></li>
+              <li><b>Régulateurs </b></li>
+              <li><b>Onduleurs </b></li>
+              <li><b>Charges</b></li>
+              <li><b>Accessoires</b></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Dimensionnement d’installation PV</h2>
+            <p class="intro-text">
+              L’efficacité de toute installation électrique dépend
+              fondamentalement de la rigueur de son dimensionnement et de son
+              utilisation car il influe directement sur le coût et les
+              performances d’une installation. <br />
+              Le dimensionnement a pour but de déterminer la puissance du
+              générateur photovoltaïque et la capacité de la batterie, à partir
+              des données d’ensoleillement du site d’une part et des besoins
+              électriques de l’utilisateur d’autre part.
+            </p>
+            <h3>Paramètres d’entrée intervenants dans le dimensionnement</h3>
+            <ul class="intro-text">
+              <li><b>Le lieu où sera placé le générateur PV</b></li>
+              <li>
+                <b
+                  >Le système PV (modules, régulateur, onduleur et batteries)
+                </b>
+              </li>
+              <li><b> La charge </b></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Méthodes de dimensionnement d’un système PV</h2>
+            <ul class="meth">
+              <li>
+                <b>Méthode de la probabilité d’erreur dans la consommation </b>
+              </li>
+              <li><b>Méthode de la moyenne annuelle</b></li>
+              <li><b>Méthode LPSP</b></li>
+              <li><b>Méthode des heures équivalentes</b></li>
+              <li><b>Méthode iterative</b></li>
+              <li><b>Méthode utilisabilité solaire</b></li>
+              <li class="active"><b>Méthode simplifiée</b></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Méthode simplifiée</h2>
+            <p class="intro-text">
+              Dans cette méthode, on estime l’énergie récupérable pour une
+              période critique d’un mois, appelé le mois le plus défavorable. Ce
+              mois correspond au mois pendant lequel la valeur de l’irradiation
+              moyenne mensuelle est la plus faible de l’année ou dans certains
+              pays la période d’hivers est rude.
+            </p>
+          </section>
+          <section>
+            <div class="etape">
+              <b
+                >Etape1 : Estimation des besoins journaliers de l’utilisateur en
+                électricité
+              </b>
+
+              <div>
+                \[\begin{aligned} E_C=\sum E_J\ \end{aligned} \]
+                <p>Avec :</p>
+                \[\begin{aligned} E_J=n_J .P_J .t_J \end{aligned} \]
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="etape">
+              <b
+                >Etape 2 : Estimation de l’ensoleillement sur le site de
+                l’installation du générateur PV
+              </b>
+              <p>
+                Les données de l’ensoleillement peuvent être relevées sur le
+                site ou enregistrées sur la carte de l’ensoleillement de la
+                région ou encore obtenues au niveau de la station météo la plus
+                proche de la zone
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="etape">
+              <b>Etape 3 : calcul du nombre des panneaux photovoltaïques</b>
+              <div>\[\begin{aligned} P_C=E_C/(0.65\ E_I)\ \end{aligned} \]</div>
+              <div>
+                \[\begin{aligned} N_P=\ P_C/P_P \end{aligned}
+                \]\[\begin{aligned} N_Ps=V/V_P \end{aligned} \]\[\begin{aligned}
+                N_Pp=N_P/N_Ps\ \end{aligned} \]
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="etape">
+              <b>Etape 4 : calcule du nombre des batteries</b>
+              <div>
+                \[\begin{aligned} C= (N_J .E_Cj)/(D_P.V) \end{aligned} \]
+              </div>
+              <div>
+                \[\begin{aligned} N_Bs= V/V_B -1 \end{aligned} \]
+                \[\begin{aligned} N_Bp=C/C_B \end{aligned} \] \[\begin{aligned}
+                N_B=N_Bs+N_Bp \end{aligned} \]
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="etape">
+              <div><b>Etape 5 : Choix du régulateur </b></div>
+              <ul>
+                <li>La tension nominale</li>
+                <li>Le courant d'entrée</li>
+                <li>Le courant de sortie</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <div class="etape">
+              <b>Etape 6 : Choix de l’onduleur</b>
+              <div>\[\begin{aligned}P_o=P_T/η_o \end{aligned} \]</div>
+            </div>
+          </section>
+          <section>
+            <div class="etape">
+              <b> Etape 7 : Dimensionnement des câbles </b>
+              <div>\[\begin{aligned} S= (ρ.I.L)/(e.V) \end{aligned} \]</div>
+            </div>
+          </section>
+        </section>
+        <section data-transition="slide">
+          <section
+            data-transition="zoom-out"
+            style="font-size: 70px; font-weight: bolder"
+          >
+            <div class="chap-title">
+              <span>CHAPITRE III</span><br />
+              Realisation de l'interface de dimensionnement des installations
+              photovoltaïques autonomes
+            </div>
+          </section>
+          <section>
+            <h2>HTML</h2>
+            <p class="intro-text">
+              L'Hypertext Markup Language, plus communément désigné sous son
+              acronyme HTML, est employé pour faire référence à un langage
+              informatique qui permet de mettre sur internet des données
+              rédigées.Il est souvent utilisé conjointement avec le langage de
+              programmation JavaScript et des feuilles de style en cascade
+              (CSS).
+            </p>
+            <h2>CSS</h2>
+            <p class="intro-text">
+              Les feuilles de styles (en anglais "Cascading Style Sheets",
+              abrégé CSS) sont un langage qui permet de gérer la présentation
+              d'une page Web.Les styles permettent de définir des règles
+              appliquées à un ou plusieurs documents HTML. Ces règles portent
+              sur le positionnement des éléments, l'alignement, les polices de
+              caractères, les couleurs, les marges et espacements, les bordures,
+              les images de fond, etc.
+            </p>
+            <h2>JavaScript</h2>
+            <p class="intro-text">
+              JavaScript désigne un langage de développement informatique, et
+              plus précisément un langage de script orienté objet. On le
+              retrouve principalement dans les pages Internet. Il permet, entre
+              autres, d'introduire sur une page web ou HTML des petites
+              animations ou des effets. Nous avons utilisé ce langage pour
+              accomplir les calculs et assurer la communication avec les API
+            </p>
+          </section>
+          <section>
+            <h2>API</h2>
+            <p class="intro-text">
+              Côté développeur, l'API définit la manière de rédiger un programme
+              qui sollicite des services auprès d'un système d'exploitation ou
+              d'une autre application. Les API sont mises en oeuvre au moyen
+              d'appels de fonction, constitués de verbes et de noms. La syntaxe
+              requise est décrite dans la documentation de l'application
+              appelée. Nous citons comme exemple les API que nous avons
+              utilisées dans notre travail.
+            </p>
+            <h3>LocationIQ</h3>
+            <p class="intro-text">
+              C’est une Geocoding API ou en français l’API de géocodage et c’est
+              un service qui fournit possibilite de convertir des adresses
+              (comme une adresse de rue) en coordonnées géographiques (comme la
+              latitude et la longitude), que on peut utiliser par exemple pour
+              placer des marqueurs sur une carte.
+            </p>
+            <h3>Weatherbit API</h3>
+            <p class="intro-text">
+              C’est un une API qui fournit des prévisions météorologiques, des
+              observations et des historiques de données météorologiques comme :
+              température, précipitations, estimation des chutes de neige,
+              indice UV, rayonnement solaire, conditions météorologiques et
+              vitesse du vent. Tout cela pour des emplacements dans le monde
+              entier. Ces données proviennent de plus de 120 000 stations
+              météorologiques dans le monde et aussi des plus grands instituts
+              mondiaux spécialisés dans ce secteur d’activité comme : NOAA
+              Integrated Surface, MADIS et GHCN datasets. De plus, ils
+              remplissent et collectent des données à partir d'ensembles de
+              données alternatifs pour améliorer leurs ensembles de données
+              historiques. Ces ensembles de données comprennent des historiques
+              de satellites, des radars pluviométriques et des projets de
+              réanalyse pour créer l'enregistrement des historiques de données
+              météorologiques le plus complet possible. Pour notre travail on a
+              besoin des données de l’ensoleillement ou le rayonnement solaire
+              afin qu’on puisse avoir le gisement solaire partout dans le monde.
+            </p>
+          </section>
+          <section>
+            <img class="api" src="img/api.png" alt="" />
+            <p class="figure">Reponse d'une API (LocationIQ)</p>
+          </section>
+        </section>
+        <section
+          data-preload
+          data-background-iframe="https://www.pvsizer.ml/"
+          data-background-interactive="true"
+        ></section>
+        <section>
+          <section
+            class="heading"
+            data-transition="zoom-out"
+            style="font-size: 70px; font-weight: bolder"
+          >
+            CONCLUSION GENERALE
+          </section>
+          <section>
+            <p class="litle-text">
+              D’une manière générale ce travail montre que grâce à nos
+              connaissances dans le domaine photovoltaïque et l’outil
+              informatique nous avons pu faciliter le dimensionnement d’un
+              système photovoltaïque et le rendre accessible pour tout le monde,
+              mais nous ne comptons pas s’arrêter à ce point-là, nous avons
+              intérêt à rendre notre interface plus indépendante en calculant le
+              nombre de jours d’autonomie pour chaque lieu introduit grâce au
+              pourcentage de l’opacité des nuages le long des années précédentes
+              et aussi proposer un schéma de montage détaillé à la fin du
+              dimensionnement.
+            </p>
+          </section>
+        </section>
+        <section><h1>MERCI POUR VOTRE ATTENTION</h1></section>
+      </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        math: {
+          mathjax:
+            "https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js",
+          config: "TeX-AMS_HTML-full",
+          // pass other options into `MathJax.Hub.Config()`
+          TeX: { Macros: { RR: "{\\bf R}" } },
+        },
+        plugins: [RevealMath],
+      });
+      Reveal.configure({ backgroundTransition: "zoom" });
+    </script>
+  </body>
 </html>
